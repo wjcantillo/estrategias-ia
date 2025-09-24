@@ -38,7 +38,7 @@ if HF_TOKEN:
                 prompt = f"""Eres un experto en estrategia organizacional.\nObjetivo: {objetivo}\nIniciativa: {iniciativa}\nGenera una estrategia clara, medible y coherente que relacione la iniciativa con el cumplimiento del objetivo."""
 
                 completion = client.chat.completions.create(
-                    model="deepseek-ai/DeepSeek-V3.1-Terminus",
+                    model="huggingfaceh4/zephyr-7b-beta",
                     messages=[
                         {"role": "user", "content": prompt}
                     ]
